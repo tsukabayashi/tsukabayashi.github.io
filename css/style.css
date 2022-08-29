@@ -869,6 +869,9 @@ main {
       width: 30px;
       height: 20px;
   }
+   #menubar.fixed{
+    background-color: #ccc;
+  }	
 
   /* main-visual */
 
@@ -914,24 +917,24 @@ main {
     
 }
 .main-visual__detail h1 {
-    font-size: 31px;
+    font-size: 50px;
     margin-bottom: -10px;
     font-weight: normal;
     text-align: right;
 }
 .main-visual__detail p {
-  font-size: 10px;
+  font-size: 20px;
   line-height: 2.5;
   text-align: right;
   color: #eee;
 }
 
 h2,h3,h4,h5,h6{
-  font-size: 20px;
+  font-size: 30px;
 }
 
 span{
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .slideshow .content img {
@@ -998,7 +1001,7 @@ span{
     display: block;
   }
  #fukidashi{
-  font-size: 10px;
+  font-size: 20px;
  }
 
 }
