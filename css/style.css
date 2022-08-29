@@ -967,9 +967,10 @@ main {
 	
 }
 .main-visual__detail p {
-  font-size: 20px;
-  width: 300px;	
-  line-height: 2.0;
+  font-size: 18px;
+  width: 300px;
+  height:160px;
+  line-height: 1.7;
   text-align: right;
   color: #eee;
 }
@@ -1022,7 +1023,7 @@ span{
 
   .fukidashi{
     display: none!important;
-  }
+	  font-size:19px;}	  
 
   .fukidashi.active{
     display: block!important;
