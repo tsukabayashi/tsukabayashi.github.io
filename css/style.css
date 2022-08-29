@@ -102,7 +102,7 @@ ol {
   background:#000;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 425px){
   .title span{
     font-size:26px;
     padding: 0 50px;
