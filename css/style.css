@@ -955,7 +955,7 @@ main {
   .main-visual__image {
     margin: 0px;
     width: 290px;
-    height:440px;
+    height:380px;
     background: url(../../image/itijic.jpg) no-repeat left top / 100% auto;
     
 }
@@ -1023,7 +1023,7 @@ span{
 
   .fukidashi{
     display: none!important;
-	  font-size:13px;}	  
+	  font-size:12px;}	  
 
   .fukidashi.active{
     display: block!important;
