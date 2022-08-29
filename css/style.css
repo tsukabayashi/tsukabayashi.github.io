@@ -515,6 +515,25 @@ a[href^="tel"] {
       width:550px;
       height: auto;
       } 
+     /*ギャラリー内のイメージは横幅100%にする*/
+      .food img{
+          width: 150px;
+          height: 150px;
+          display:block;
+          box-sizing: border-box;
+          list-style: none;
+          }
+          .food figure.hover-parent {
+            width: 150px;
+            height: 150px;
+            position: relative;
+            margin: 0;
+            overflow: hidden;
+            padding: 0;
+        }
+        .food figcaption.hover-mask {
+          width: 150px;
+          height: 150px;}
     }
     @media only screen and (max-width: 425px) {
       .food{
@@ -900,7 +919,7 @@ main {
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 750px){
   .aboutimg1{
    display: none;
   }
@@ -930,6 +949,19 @@ main {
   text-align: right;
  
 }
+	
+	.slideshow .content img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  box-sizing: border-box;
+  list-style: none;
+}
+  
+  #work li .modal.show img {
+      width: auto;
+      height: 100%;
+  }
 	
 
 /* Smartphone Vertical */
