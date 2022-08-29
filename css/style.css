@@ -900,6 +900,38 @@ main {
 
 }
 
+@media screen and (max-width: 600px){
+  .aboutimg1{
+   display: none;
+  }
+ .aboutimg2{
+   display: none;
+	 
+  }
+    .main-visual__image {
+    margin: 0px;
+    width: 290px;
+    height:380px;
+    background: url(../../image/itijic.jpg) no-repeat left top / 100% auto;
+    
+}
+.main-visual__detail h1 {
+    font-size: 50px;
+    margin-bottom: -10px;
+    font-weight: normal;
+    text-align: right;
+	
+	
+}
+.main-visual__detail p {
+  font-size: 18px;
+  width: 250px;
+  line-height: 1.7;
+  text-align: right;
+ 
+}
+	
+
 /* Smartphone Vertical */
 @media screen and (max-width: 425px) {
 
