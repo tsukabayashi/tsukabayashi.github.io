@@ -96,29 +96,35 @@ h6{
  body{
    background:#eee;
    line-height: 1.7;
-  
- }
-
- body{
   position: relative;
-  cursor: none; 
  }
  
  html,body,a{
   cursor: none;
  }
 
-.cursor,
+ #cursor{
+  position: fixed;
+  /*丸の大きさと色の指定*/
+  background: #867ea5;
+  border-radius:15px;
+  width: 25px;
+  height: 25px;
+  margin: -20px 0 0 -20px;/*真ん中にくるようにマイナスマージンで調整*/
+  z-index: 2;/*一番手前に来るように*/
+  pointer-events: none;/*クリックできなくなるのを防ぐため。noneで対応*/
+  opacity: 0;
+}
+
 .follower {
-  border-radius: 50%;
+  border-radius: 45%;
   position: absolute; 
   top: 0;
   left: 0; 
   position: none; 
 }
- 
+ /*
 .cursor {
-  
   width: 12px;
   height: 12px;
   background-color: #867ea5;
@@ -133,9 +139,8 @@ h6{
   height: 40px;
   background: rgba(205, 114, 113, 0.5);
 }
- 
+*/
 
- 
  @font-face {
 	font-family: "Abril_fatface";
 	src: url("../Abril_Fatface/AbrilFatface-Regular.ttf") ;
@@ -591,6 +596,8 @@ a[href^="tel"] {
 
 .about_span{
   font-size: 15px;
+  border-bottom: solid #2a2c20 1px;
+  padding: 0.5em 0 0.5em 1.5em;
 }
 
 .css-fukidashi {
@@ -615,7 +622,7 @@ a[href^="tel"] {
   background: #867ea5;
   color: #fff;
   font-weight: lighter;
-  font-size: 3px;
+  font-size: 5px;
   position: relative;
 }
 .fukidashi:after {
@@ -638,7 +645,16 @@ a[href^="tel"] {
 .text{
   position: relative;
 }
-.text:hover .fukidashi {
+
+#text-point{
+  position: relative;
+}
+/*
+#text-point:hover {
+  background-color: red;
+}
+*/
+#text-point:hover + .fukidashi {
   display: block;
   position: absolute;
   left: -66px;
@@ -653,7 +669,7 @@ a[href^="tel"] {
 }
 
 #active {
-margin: auto;
+  margin: auto;
 }
 
 
@@ -878,18 +894,23 @@ main {
 }
 
 /* Smartphone side */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 400px) {
 
   html,body{
     margin:0;
+    background-color: #ccc;
   }
 
   .cursor{
     display: none;
   }
+  .pagetop a {
+    background-color: #eee;
+  }
 
   .main-visual__image {
     margin: 30px;
+    width: 150px;
     background: url(../../image/itijic.jpg) no-repeat left top / 100% auto;
     
 }
@@ -903,16 +924,14 @@ main {
   font-size: 10px;
   line-height: 2.5;
   text-align: right;
+  color: #eee;
 }
 
 h2,h3,h4,h5,h6{
   font-size: 20px;
 }
 
-.workbun{
-  font-size: 8px;
-}
-.four{
+span{
   font-size: 8px;
 }
 
@@ -947,12 +966,44 @@ h2,h3,h4,h5,h6{
   }
 
 
-#copyright{
-  margin-top: 100px;
-  color:#2a2c20;
+  #copyright{
+    margin-top: 100px;
+    color:#2a2c20;
+    font-size: 10px;
+    padding:18px 13px;
+  }
+
+  .fukidashi{
+    display: none!important;
+  }
+
+  .fukidashi.active{
+    display: block!important;
+  }
+  .other-text{
+    font-size: 15px;
+  }
+  #text-point-test{
+    position: relative;
+    display: inline-block;
+  }
+  
+  #text-point-test .fukidashi{
+  
+    position: absolute;
+      left: -65px;
+      top: 35px;
+  }
+  
+  #text-point-test:hover .fukidashi{
+    display: block;
+  }
+ #fukidashi{
   font-size: 10px;
-  padding:18px 13px;
-}
+ }
+
 }
   
+
+
 
