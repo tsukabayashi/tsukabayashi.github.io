@@ -71,6 +71,48 @@ ol {
     list-style: none !important;
 }
 
+.title{
+  text-align: center;
+}
+.title span{
+  display: inline-block;
+  padding:0 80px;
+  position: relative;
+}
+
+.title span::before{
+  content:'';
+  width: 77px;
+  height:2px;
+  position: absolute;
+  left:0;
+  bottom:13px;
+  display: block;
+  background:#000;
+}
+
+.title span::after{
+  content:'';
+  width: 77px;
+  height:2px;
+  position: absolute;
+  right:0;
+  bottom:13px;
+  display: block;
+  background:#000;
+}
+
+@media screen and (max-width: 400px){
+  .title span{
+    font-size:26px;
+    padding: 0 50px;
+  }
+  .title span::before,
+  .title span::after{
+    width: 47px;
+  }
+}
+
 h2{
   margin: 50px 15px 5px;
   text-align: center;
