@@ -911,8 +911,8 @@ main {
   }
 
   .main-visual__image {
-    margin: 30px;
-    width: 150px;
+    margin: 0px;
+    width: 500px;
     background: url(../../image/itijic.jpg) no-repeat left top / 100% auto;
     
 }
@@ -921,9 +921,12 @@ main {
     margin-bottom: -10px;
     font-weight: normal;
     text-align: right;
+	color: #eee;
+	
 }
 .main-visual__detail p {
   font-size: 20px;
+  width: 300;	
   line-height: 2.5;
   text-align: right;
   color: #eee;
@@ -1001,7 +1004,7 @@ span{
     display: block;
   }
  #fukidashi{
-  font-size: 20px;
+  font-size: 30px;
  }
 
 }
