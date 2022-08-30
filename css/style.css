@@ -837,7 +837,9 @@ a[href^="tel"] {
 ---------------------------------------------------------------------------*/
 /*リンクテキストの設定*/
 #menubar a {
-	padding: 0 20px;	/*上下、左右へのテキスト内にとる余白。*/
+	padding: 0 20px;
+	/*上下、左右へのテキスト内にとる余白。*/
+	font-size: 18px;
 }
 
 /*service.htmlの各ボックス
@@ -919,7 +921,7 @@ main {
 
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 785px){
   .aboutimg1{
    display: none;
   }
@@ -978,7 +980,9 @@ main {
    #menubar.fixed{
     background-color: #ccc;
   }	
-
+#menubar a{
+	font-size: 13px;
+	}
   /* main-visual */
 
   /* about */
@@ -999,6 +1003,9 @@ main {
       height: 170px;
   }
 
+	 .fukidashi{
+    display: none!important;
+	  font-size:14px;}
 }
 
 /* Smartphone side */
