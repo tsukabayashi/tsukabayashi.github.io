@@ -503,7 +503,7 @@ a[href^="tel"] {
     /*　横幅900px以下の段組み設定　*/
     @media only screen and (max-width: 900px) {
       .food{
-      columns:3;
+      columns:4;
       width: 810px;
       height: auto;
       } 
@@ -537,7 +537,7 @@ a[href^="tel"] {
     }
     @media only screen and (max-width: 425px) {
       .food{
-      columns: 1;
+      columns: 2;
       width: 310px;
       height: auto;}
 
